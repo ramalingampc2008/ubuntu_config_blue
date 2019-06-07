@@ -1,0 +1,89 @@
+[user]
+	email = ramalingam.c@intel.com
+	name = Ramalingam C
+
+[color]
+        ui = auto
+
+[core]
+        editor = vim
+	abbrev = 12
+	gitproxy = /home/ramaling/git-proxy.sh
+
+[sendemail]
+	smtpserver = smtp.intel.com
+        smtpserverport = 25
+        signedoffcc = false
+        supresscc = all
+        chainreplyto = false
+        assume8bitEncoding = utf-8
+	from = Ramalingam C <ramalingam.c@intel.com>
+
+[review "aia-review.intel.com"]
+        username = ramaling
+
+[review "android.intel.com:8080"]
+        username = ramaling
+
+[url "ssh://android-mirror-ba.devtools.intel.com/"]
+        insteadOf=ssh://jfumg-gcrmirror.jf.intel.com/
+[url "ssh://android-mirror-ba.devtools.intel.com/"]
+        insteadOf=ssh://android-mirror.devtools.intel.com/
+[url "ssh://android-mirror-ba.devtools.intel.com/"]
+        insteadOf=git://jfumg-gcrmirror.jf.intel.com/
+[url "ssh://android-mirror-ba.devtools.intel.com/"]
+        insteadOf=git://android-mirror.devtools.intel.com/
+
+#[url "ssh://ramaling@android-mirror-ba.devtools.intel.com:29418/"]
+#        insteadOf=git://android.intel.com/
+#[url "ssh://ramaling@android-mirror-ba.devtools.intel.com:29418/"]
+#        insteadOf=ssh://android.intel.com:29418/
+#[url "ssh://ramaling@android-mirror-ba.devtools.intel.com:29418/"]
+#        insteadOf=ssh://android.intel.com/
+
+[url "ssh://android.intel.com:29418/"]
+        pushInsteadOf=ssh://android.intel.com/
+        pushInsteadOf=ssh://android.intel.com:29418/
+        pushInsteadOf=ssh://android-mirror-ba.devtools.intel.com/
+        pushInsteadOf=ssh://android-mirror-ba.devtools.intel.com:29418/
+        pushInsteadOf=ssh://android-mirror.devtools.intel.com/
+        pushInsteadOf=ssh://android-mirror.devtools.intel.com:29418/
+#        pushInsteadOf=ssh://jfumg-gcrmirror.jf.intel.com/
+#        pushInsteadOf=ssh://jfumg-gcrmirror.jf.intel.com:29418/
+
+[codecheck]
+	folder = /home/ramaling/mnt_p1/repos/imin_legacy_3nov/vendor/intel/tools/PRIVATE/codecheck
+[sendemail "otc-internal"]
+	to = gfx-internal-devel@linux.intel.com
+	from = Ramalingam C <ramalingam.c@intel.com>
+[sendemail "otc-external"]
+	to = intel-gfx@lists.freedesktop.org
+	from = Ramalingam C <ramalingam.c@intel.com>
+
+
+[url "ssh://ext-intel-ramalingam.c@usw2-acos2014-gerrit-mirror.labcollab.net:9418/"]
+    insteadOf = git://gerrit6.labcollab.net/
+    insteadOf = https://gerrit6.labcollab.net/gerrit/
+    insteadOf = http://gerrit6.labcollab.net/gerrit/
+    insteadOf = ssh://gerrit6.labcollab.net:9418/
+    insteadOf = ssh://gerrit6.labcollab.net/
+    insteadOf = ssh://ext-intel-ramalingam.c@gerrit6.labcollab.net:9418/
+
+[url "ssh://ext-intel-ramalingam.c@gerrit6.labcollab.net:9418/"]
+    pushInsteadOf = git://usw2-acos2014-gerrit-mirror.labcollab.net/
+    pushInsteadOf = ssh://usw2-acos2014-gerrit-mirror.labcollab.net:9418/
+    pushInsteadOf = ssh://ext-intel-ramalingam.c@usw2-acos2014-gerrit-mirror.labcollab.net:9418/
+    pushInsteadOf = git://gerrit6.labcollab.net/
+    pushInsteadOf = http://gerrit6.labcollab.net/gerrit/
+    pushInsteadOf = https://gerrit6.labcollab.net/gerrit/
+    pushInsteadOf = ssh://gerrit6.labcollab.net:9418/
+    pushInsteadOf = ssh://gerrit6.labcollab.net/
+    pushInsteadOf = ssh://ext-intel-ramalingam.c@gerrit6.labcollab.net:9418/
+[http]
+	cookiefile = /home/ramaling/.gitcookies
+[review "https://chromeos.intel.com/gerrit"]
+	username = ramaling
+[review "https://chromeos.intel.com"]
+	username = ramaling
+[review "chromeos.intel.com"]
+	username = ramaling

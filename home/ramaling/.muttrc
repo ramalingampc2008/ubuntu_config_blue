@@ -1,0 +1,69 @@
+## Receive mail settings
+# Mutt will prompt for a password by default
+#set imap_pass=foo
+set folder="imaps://gar\\ramaling@imapmail.intel.com/"
+set spoolfile="imaps://gar\\ramaling@imapmail.intel.com/"
+set postponed = +Drafts
+set record = "+Sent Items"
+## Send mail settings
+set smtp_url=smtp://smtp.intel.com
+set realname='Ramalingam C'
+set from='ramalingam.c@intel.com'
+set hostname="intel.com"
+set envelope_from=yes
+set use_from=yes
+set send_charset="utf-8"
+set forward_format="Fw: %s"
+set header_cache = ~/.mutt/hcache
+set message_cachedir = ~/.mutt/mcache
+## Basic settings (modified from defaults)
+set quit=ask-yes
+set pager_stop
+set pager_index_lines=10
+set menu_move_off=no
+set menu_scroll=yes
+set charset="utf-8"
+set mark_old=yes
+## Composing
+# Change to your preferred text editor
+set editor=vim
+set visual=vim
+set edit_headers=yes
+set date_format="%F at %T %Z"
+## Display settings
+set sort_aux = last-date-received                           
+set sort=threads
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+# Add to ~/.mailcap to render HTML email to plain text
+# text/html; w3m -I %{charset} -T text/html; copiousoutput;
+unignore Content-Type Message-ID
+hdr_order Date From To Content-Type Message-ID
+## crypto settings
+#source ~/.mutt/crypto
+## color scheme settings
+#source ~/.mutt/colors/myscheme
+## custom keybindings
+bind index G imap-fetch-mail
+## contacts
+#alias name First Last <first.last@intel.com>
+alias danvet.vetter Daniel Vetter <daniel@ffwll.ch>
+alias jani.nikula Jani Nikula <jani.nikula@intel.com>
+alias suresh.kumar.kurmi \"Kurmi, Suresh Kumar\" <suresh.kumar.kurmi@intel.com>
+alias jani.s \"Saarinen, Jani\" <jani.saarinen@intel.com>
+alias andi.shyti Andi <andi.shyti@intel.com>
+alias chris.wilson Chris Wilson <chris@chris-wilson.co.uk>
+alias gwan-gyeong.mun \"Mun, Gwan-gyeong\" <gwan-gyeong.mun@intel.com>
+alias shashank.sharma \"Sharma, Shashank\" <shashank.sharma@intel.com>
+alias igt-dev igt-dev <igt-dev@lists.freedesktop.org>
+alias uma.shankar \"Shankar, Uma\" <uma.shankar@intel.com>
+alias vandita.kulkarni \"Kulkarni, Vandita\" <vandita.kulkarni@intel.com>
+alias francesco.balestrieri \"Balestrieri, Francesco\" <francesco.balestrieri@intel.com>
+alias rodrigo.vivi Rodrigo Vivi <rodrigo.vivi@intel.com>
+alias tvrtko.ursulin Tvrtko Ursulin <tvrtko.ursulin@linux.intel.com>
+alias imre.deak Imre Deak <imre.deak@intel.com>
+alias ville.syrjala Ville Syrjälä <ville.syrjala@linux.intel.com>
+alias intel-gfx intel-gfx <intel-gfx@lists.freedesktop.org>
+alias tomi.p.sarvela \"Sarvela, Tomi P\" <tomi.p.sarvela@intel.com>
+alias anshuman.gupta Anshuman Gupta <anshuman.gupta@intel.com>
+alias martin.peres Martin Peres <martin.peres@linux.intel.com>

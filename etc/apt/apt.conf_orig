@@ -1,0 +1,4 @@
+Acquire::http::proxy "http://proxy.iind.intel.com:911/";
+Acquire::https::proxy "http://proxy.iind.intel.com:911/";
+Acquire::ftp::proxy "ftp://proxy.iind.intel.com:911/";
+Acquire::socks::proxy "socks://proxy.iind.intel.com:1080/";
